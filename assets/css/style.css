@@ -140,15 +140,30 @@ h6 {
 .gallery-img {
     border-radius: 15px;
     overflow: hidden;
+    /* Penting agar gambar tidak keluar saat zoom */
     cursor: pointer;
     position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    /* Efek glass transparan */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+    /* Membuat div inner memenuhi tinggi kolom */
 }
 
 .gallery-img img {
     transition: transform 0.5s ease;
     width: 100%;
+
+    /* PENTING UNTUK SIMETRI: */
+    aspect-ratio: 1 / 1;
+    /* Bisa diganti 4/3 atau 16/9 sesuai selera */
+    object-fit: cover;
+    /* Memastikan foto tidak gepeng */
+    display: block;
 }
 
+/* Efek Hover Zoom */
 .gallery-img:hover img {
     transform: scale(1.1);
 }
