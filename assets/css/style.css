@@ -303,3 +303,21 @@ section {
 .ratio iframe:hover {
     filter: grayscale(0%);
 }
+
+.map-container {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.map-container:hover {
+    border-color: var(--color-pink);
+    transform: scale(1.01);
+}
+
+.map-container img {
+    transition: filter 0.3s ease;
+}
+
+.map-container:hover img {
+    filter: brightness(0.9);
+}
