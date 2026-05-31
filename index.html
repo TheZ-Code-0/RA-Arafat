@@ -4,103 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RA Assuryaniyah Arafat - Satu Atap Kebahagiaan</title>
+    <title>RA Assuryaniyah Arafat — Satu Atap Kebahagiaan</title>
+    <meta name="description"
+        content="RA Assuryaniyah Arafat, sekolah ramah anak di Bekasi. Mendidik dengan cinta, bermain dengan bahagia. Membangun fondasi karakter Islami sejak usia dini.">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo-ra.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        /* Smooth Scroll agar perpindahan section halus */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section {
-            padding: 80px 0;
-        }
-    </style>
 </head>
 
 <body id="home">
 
-    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+    <!-- Animated background layers -->
+    <div class="bg-aurora"></div>
+    <div class="bg-blobs">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+    </div>
+
+    <!-- Dekorasi melayang -->
+    <div class="bg-decor" aria-hidden="true">
+        <span style="top:12%;left:3%;width:96px;opacity:.55;animation:floatA 14s ease-in-out infinite;">
+            <svg viewBox="0 0 120 70"><g fill="#ffffff"><circle cx="35" cy="45" r="22"/><circle cx="65" cy="35" r="28"/><circle cx="92" cy="47" r="20"/><rect x="30" y="45" width="65" height="22" rx="11"/></g></svg></span>
+        <span style="top:7%;right:7%;width:120px;opacity:.45;animation:floatB 18s ease-in-out infinite;">
+            <svg viewBox="0 0 120 70"><g fill="#ffffff"><circle cx="35" cy="45" r="22"/><circle cx="65" cy="35" r="28"/><circle cx="92" cy="47" r="20"/><rect x="30" y="45" width="65" height="22" rx="11"/></g></svg></span>
+        <span style="top:30%;left:46%;width:26px;animation:twinkle 4s ease-in-out infinite;">
+            <svg viewBox="0 0 100 100"><path fill="#ffc14d" d="M50 5 L61 38 L96 38 L68 59 L79 92 L50 71 L21 92 L32 59 L4 38 L39 38 Z"/></svg></span>
+        <span style="top:64%;right:12%;width:20px;animation:twinkle 5s ease-in-out infinite .6s;">
+            <svg viewBox="0 0 100 100"><path fill="#ff8a7d" d="M50 5 L61 38 L96 38 L68 59 L79 92 L50 71 L21 92 L32 59 L4 38 L39 38 Z"/></svg></span>
+        <span style="bottom:16%;left:7%;width:22px;animation:twinkle 6s ease-in-out infinite 1.2s;">
+            <svg viewBox="0 0 100 100"><path fill="#ffc14d" d="M50 5 L61 38 L96 38 L68 59 L79 92 L50 71 L21 92 L32 59 L4 38 L39 38 Z"/></svg></span>
+        <span style="top:21%;right:4%;width:44px;opacity:.6;animation:floatB 16s ease-in-out infinite;">
+            <svg viewBox="0 0 100 100"><path fill="#4cc9a8" d="M66 10a40 40 0 1 0 0 80 32 32 0 1 1 0-80z"/></svg></span>
+        <span style="bottom:30%;right:38%;width:30px;opacity:.55;animation:floatA 13s ease-in-out infinite;">
+            <svg viewBox="0 0 100 100"><path fill="#ffc14d" d="M66 10a40 40 0 1 0 0 80 32 32 0 1 1 0-80z"/></svg></span>
+        <span style="bottom:13%;left:22%;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ffd9d2,#ff8a7d);opacity:.5;animation:floatA 11s ease-in-out infinite;"></span>
+        <span style="top:50%;left:6%;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#cdeee9,#4cc9a8);opacity:.5;animation:floatB 12s ease-in-out infinite;"></span>
+    </div>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home" style="color: #ff6f91;">
-                <img src="assets/img/logo-ra.png" alt="Logo" height="45" class="d-inline-block align-text-top me-2">
-                RA Assuryaniyah
+            <a class="brand" href="#home">
+                <img src="assets/img/logo-ra.png" alt="Logo RA Assuryaniyah">
+                RA <span>Assuryaniyah</span>
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#teacher">Guru</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="https://wa.me/6281281163844" class="btn btn-ra btn-sm">Daftar Sekarang</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#facility">Fasilitas</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#teacher">Guru</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a class="btn btn-sm" href="https://wa.me/6281281163844" target="_blank">Daftar Sekarang</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
-    <section class="hero-section">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                    <div class="glass p-4 p-md-5">
-                        <span class="badge bg-white text-primary mb-3 rounded-pill px-3 py-2 shadow-sm">
-                            <i class="fas fa-heart text-danger me-1"></i> Sekolah Ramah Anak
-                        </span>
-                        <h1 class="display-4 fw-bold mb-3">
-                            Selamat Datang di <br>
-                            <span style="color: #ff6f91;">RA Assuryaniyah Arafat</span>
-                        </h1>
-                        <p class="lead mb-4 text-secondary">
-                            Mendidik dengan Cinta, Bermain dengan Bahagia. Membangun fondasi karakter Islami sejak usia
-                            dini.
-                        </p>
-                        <a href="#about" class="btn btn-ra">Pelajari Lebih Lanjut</a>
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="eyebrow reveal"><i class="fas fa-heart"></i> Sekolah Ramah Anak</span>
+                    <h1 class="reveal d1">Tempat Tumbuh <span class="hl">Ceria &amp; Islami</span> untuk Ananda</h1>
+                    <p class="lead reveal d2">Mendidik dengan cinta, bermain dengan bahagia. Kami membangun
+                        fondasi karakter Islami sejak masa <em>golden age</em> si kecil.</p>
+                    <div class="hero-actions reveal d3">
+                        <a href="https://wa.me/6281281163844" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Daftar Sekarang</a>
+                        <a href="#about" class="btn btn-ghost">Pelajari Lebih Lanjut</a>
+                    </div>
+                    <div class="hero-stats reveal d4">
+                        <div class="stat"><strong data-count="120" data-suffix="+">0</strong><span>Siswa Aktif</span></div>
+                        <div class="stat"><strong data-count="5">0</strong><span>Guru Berpengalaman</span></div>
+                        <div class="stat"><strong data-count="10" data-suffix="+">0</strong><span>Tahun Mengabdi</span></div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center" data-aos="zoom-in">
-                    <img src="assets/img/hero-ra.png" alt="Hero RA" class="img-fluid" style="max-height: 480px;">
-                </div>
-                <div class="blob-container d-none d-lg-block">
-                    <div class="blob shape-1"></div>
-                    <div class="blob shape-2"></div>
+                <div class="hero-visual reveal d2">
+                    <div class="hero-float">
+                        <div class="hero-card glass">
+                            <img src="assets/img/hero-ra.jpg" alt="Suasana belajar RA Assuryaniyah">
+                            <span class="chip c1"><i class="fas fa-star-and-crescent"></i> Tahfidz</span>
+                            <span class="chip c2"><i class="fas fa-palette"></i> Seni Kreatif</span>
+                            <span class="chip c3"><i class="fas fa-seedling"></i> Alam Ceria</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll ke bawah">
+            <span class="mouse"><span class="wheel"></span></span>
+            Scroll
+        </a>
     </section>
 
-    <section id="about">
+    <!-- wave divider -->
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="rgba(255,255,255,0.5)" d="M0,40 C360,90 1080,-10 1440,40 L1440,80 L0,80 Z"></path>
+    </svg>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
         <div class="container">
-            <div class="glass p-5" data-aos="fade-up">
-                <div class="row align-items-center">
-                    <div class="col-md-5 mb-4 mb-md-0">
-                        <img src="assets/img/sekolah.png" class="img-fluid rounded-4 shadow" alt="Sekolah Kami">
-                    </div>
-                    <div class="col-md-7">
-                        <h2 class="fw-bold mb-3" style="color: #87ceeb;">Tentang Kami</h2>
-                        <p>RA Assuryaniyah Arafat hadir sebagai partner orang tua dalam membimbing ananda di masa
-                            *Golden Age*. Kami mengutamakan pembentukan akhlak tanpa menghilangkan keceriaan dunia anak.
-                        </p>
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <h6 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Visi</h6>
-                                <p class="small">Mewujudkan generasi Rabbani yang mandiri dan kreatif.</p>
-                            </div>
-                            <div class="col-6">
-                                <h6 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Kurikulum</h6>
-                                <p class="small">Kombinasi kurikulum Nasional & nilai Islami.</p>
-                            </div>
+            <div class="about-grid">
+                <div class="about-img-wrap reveal">
+                    <img src="assets/img/sekolah.jpg" alt="Gedung RA Assuryaniyah Arafat">
+                </div>
+                <div class="about-text reveal d1">
+                    <span class="eyebrow"><i class="fas fa-school"></i> Tentang Kami</span>
+                    <h2 class="section-title">Partner Terbaik di Masa Golden Age</h2>
+                    <p class="section-sub">RA Assuryaniyah Arafat hadir sebagai partner orang tua dalam membimbing
+                        ananda. Kami mengutamakan pembentukan akhlak tanpa menghilangkan keceriaan dunia anak.</p>
+                    <div class="about-points">
+                        <div class="about-point">
+                            <h6><i class="fas fa-bullseye"></i> Visi</h6>
+                            <p>Mewujudkan generasi Rabbani yang mandiri dan kreatif.</p>
+                        </div>
+                        <div class="about-point">
+                            <h6><i class="fas fa-book-open"></i> Kurikulum</h6>
+                            <p>Kombinasi kurikulum Nasional &amp; nilai-nilai Islami.</p>
+                        </div>
+                        <div class="about-point">
+                            <h6><i class="fas fa-hand-holding-heart"></i> Misi</h6>
+                            <p>Mendidik dengan kasih sayang dan pembiasaan adab harian.</p>
+                        </div>
+                        <div class="about-point">
+                            <h6><i class="fas fa-children"></i> Suasana</h6>
+                            <p>Lingkungan aman, ramah anak, dan penuh kebahagiaan.</p>
                         </div>
                     </div>
                 </div>
@@ -108,241 +143,255 @@
         </div>
     </section>
 
-    <section id="program" style="background: rgba(255,255,255,0.2);">
+    <!-- ============ PROGRAM ============ -->
+    <section id="program" class="section">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Program Unggulan</h2>
-                <p class="text-muted">Aktivitas seru untuk kembangkan potensi ananda</p>
+            <div class="center" style="margin-bottom:54px;">
+                <span class="eyebrow reveal"><i class="fas fa-wand-magic-sparkles"></i> Program Unggulan</span>
+                <h2 class="section-title reveal d1">Aktivitas Seru Setiap Hari</h2>
+                <p class="section-sub reveal d2">Dirancang untuk mengembangkan seluruh potensi ananda.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
-                    <div class="glass feature-card">
-                        <div class="icon-box" style="background: #fff9c4; color: #fbc02d;"><i
-                                class="fas fa-star-and-crescent"></i></div>
-                        <h4>Adab & Tahfidz</h4>
-                        <p>Pembiasaan adab harian dan hafalan surat pendek Juz 30.</p>
-                    </div>
+            <div class="cards">
+                <div class="feature-card glass reveal d1">
+                    <div class="icon-box" style="background:#fff4cf;color:#f2a900;"><i class="fas fa-star-and-crescent"></i></div>
+                    <h4>Adab &amp; Tahfidz</h4>
+                    <p>Pembiasaan adab harian dan hafalan surat-surat pendek Juz 30.</p>
                 </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                    <div class="glass feature-card">
-                        <div class="icon-box" style="background: #e1f5fe; color: #03a9f4;"><i
-                                class="fas fa-palette"></i></div>
-                        <h4>Seni Kreatif</h4>
-                        <p>Eksplorasi warna dan kerajinan untuk melatih motorik halus.</p>
-                    </div>
+                <div class="feature-card glass reveal d2">
+                    <div class="icon-box" style="background:#d9f1ff;color:#0aa6e8;"><i class="fas fa-palette"></i></div>
+                    <h4>Seni Kreatif</h4>
+                    <p>Eksplorasi warna dan kerajinan untuk melatih motorik halus.</p>
                 </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
-                    <div class="glass feature-card">
-                        <div class="icon-box" style="background: #f1f8e9; color: #7cb342;"><i
-                                class="fas fa-seedling"></i></div>
-                        <h4>Alam Ceria</h4>
-                        <p>Mengenal ciptaan Allah melalui kegiatan berkebun dan outbound.</p>
-                    </div>
+                <div class="feature-card glass reveal d3">
+                    <div class="icon-box" style="background:#e3f8ea;color:#3fb96b;"><i class="fas fa-seedling"></i></div>
+                    <h4>Alam Ceria</h4>
+                    <p>Mengenal ciptaan Allah lewat berkebun dan kegiatan outbound.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="py-5">
+    <!-- ============ FACILITIES ============ -->
+    <section id="facility" class="section">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Galeri Kegiatan</h2>
-
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan.jpeg" class="img-fluid rounded-3" alt="Kegiatan 1">
-                    </div>
+            <div class="center" style="margin-bottom:54px;">
+                <span class="eyebrow reveal"><i class="fas fa-puzzle-piece"></i> Fasilitas</span>
+                <h2 class="section-title reveal d1">Lingkungan Belajar yang Nyaman</h2>
+                <p class="section-sub reveal d2">Ruang yang aman dan ceria untuk mendukung tumbuh kembang ananda.</p>
+            </div>
+            <div class="facilities">
+                <div class="facility glass reveal d1">
+                    <div class="f-ic" style="background:linear-gradient(135deg,#2bb8a6,#0f9d8c);"><i class="fas fa-chalkboard"></i></div>
+                    <div><h5>Ruang Kelas Ceria</h5><p>Kelas penuh warna, terang, dan nyaman untuk belajar sambil bermain.</p></div>
                 </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-1.jpeg" class="img-fluid rounded-3" alt="Kegiatan 2">
-                    </div>
+                <div class="facility glass reveal d2">
+                    <div class="f-ic" style="background:linear-gradient(135deg,#ff8a7d,#ff5a4d);"><i class="fas fa-shapes"></i></div>
+                    <div><h5>Area Bermain Aman</h5><p>Sarana bermain yang aman untuk melatih motorik dan keberanian.</p></div>
                 </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-2.jpeg" class="img-fluid rounded-3" alt="Kegiatan 3">
-                    </div>
+                <div class="facility glass reveal d3">
+                    <div class="f-ic" style="background:linear-gradient(135deg,#ffd06b,#ffc14d);"><i class="fas fa-mosque"></i></div>
+                    <div><h5>Mushola &amp; Area Ibadah</h5><p>Tempat membiasakan ibadah dan hafalan surat sejak dini.</p></div>
                 </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-3.jpeg" class="img-fluid rounded-3" alt="Kegiatan 4">
-                    </div>
+                <div class="facility glass reveal d1">
+                    <div class="f-ic" style="background:linear-gradient(135deg,#6fd9b8,#4cc9a8);"><i class="fas fa-palette"></i></div>
+                    <div><h5>Sudut Seni &amp; Kreativitas</h5><p>Ruang berekspresi lewat menggambar, mewarnai, dan kerajinan.</p></div>
                 </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-4.jpeg" class="img-fluid rounded-3" alt="Kegiatan 5">
-                    </div>
+                <div class="facility glass reveal d2">
+                    <div class="f-ic" style="background:linear-gradient(135deg,#2bb8a6,#0b7a6d);"><i class="fas fa-tree"></i></div>
+                    <div><h5>Kebun Mini &amp; Outdoor</h5><p>Belajar mengenal alam dan berkebun untuk program Alam Ceria.</p></div>
                 </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-5.jpeg" class="img-fluid rounded-3" alt="Kegiatan 6">
-                    </div>
+                <div class="facility glass reveal d3">
+                    <div class="f-ic" style="background:linear-gradient(135deg,#ffb27d,#ff8a5a);"><i class="fas fa-book-open-reader"></i></div>
+                    <div><h5>Perpustakaan Mini</h5><p>Koleksi buku cerita bergambar untuk menumbuhkan minat baca.</p></div>
                 </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-6.jpeg" class="img-fluid rounded-3" alt="Kegiatan 7">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-7.jpeg" class="img-fluid rounded-3" alt="Kegiatan 8">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-8.jpeg" class="img-fluid rounded-3" alt="Kegiatan 9">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-9.jpeg" class="img-fluid rounded-3" alt="Kegiatan 10">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-10.jpeg" class="img-fluid rounded-3" alt="Kegiatan 11">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-11.jpeg" class="img-fluid rounded-3" alt="Kegiatan 12">
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section id="teacher" style="background: rgba(255,182,193,0.1); padding: 60px 0;">
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="section">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Tim Pengajar</h2>
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Lilis+Suryani&background=ffb6c1"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Hj. Lilis Suryani, S.Ag. M.Pd.I</h6>
-                        <small class="text-muted d-block">Guru PAI</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Pak+Ponco&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Pak Ponco</h6>
-                        <small class="text-muted d-block">Pembimbing Pelukis</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Asuroh&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Ibu Asuroh, S.Pd</h6>
-                        <small class="text-muted d-block">Guru Kelas B</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Ela+Etidjah&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Ibu Ela Etidjah, S.PAUDI</h6>
-                        <small class="text-muted d-block">Guru Kelas A</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Titi+Mutiah&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Ibu Titi Mutiah, S.Pd.I</h6>
-                        <small class="text-muted d-block">Guru Kelas Ekskul</small>
-                    </div>
-                </div>
-
+            <div class="center" style="margin-bottom:46px;">
+                <span class="eyebrow reveal"><i class="fas fa-camera-retro"></i> Galeri</span>
+                <h2 class="section-title reveal d1">Momen Bahagia Mereka</h2>
+                <p class="section-sub reveal d2">Klik foto untuk memperbesar.</p>
+            </div>
+            <div class="gallery">
+                <div class="g-item span2 reveal d1"><img src="assets/img/kegiatan-3.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d2"><img src="assets/img/kegiatan.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d3"><img src="assets/img/kegiatan-1.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d4"><img src="assets/img/kegiatan-2.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d1"><img src="assets/img/kegiatan-4.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d2"><img src="assets/img/kegiatan-5.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d3"><img src="assets/img/kegiatan-6.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item span2 reveal d4"><img src="assets/img/kegiatan-8.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d1"><img src="assets/img/kegiatan-7.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d2"><img src="assets/img/kegiatan-9.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d3"><img src="assets/img/kegiatan-10.jpeg" alt="Kegiatan" loading="lazy"></div>
+                <div class="g-item reveal d4"><img src="assets/img/kegiatan-11.jpeg" alt="Kegiatan" loading="lazy"></div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- ============ TEACHERS ============ -->
+    <section id="teacher" class="section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="glass p-5">
-                        <div class="row">
-                            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-                                <h2 class="fw-bold mb-4">Ayo Daftar Sekarang!</h2>
-                                <p><i class="fas fa-map-marker-alt text-danger me-2"></i> JL Cikunir Raya Gg. H. Tohir,
-                                    RT. 02 RW. 02, Jakamulya, Bekasi Selatan, RT.002/RW.002, Jakamulya, Bekasi, Kota
-                                    Bks, Jawa Barat 17146
-                                </p>
-                                <p><i class="fas fa-phone text-success me-2"></i> +62 812-8116-3844</p>
-                                <p><i class="fas fa-envelope text-primary me-2"></i> info@assuryaniyah.sch.id</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <form id="contactForm"> <input type="text" id="NamaOrangTua"
-                                        class="form-control rounded-pill mb-3" placeholder="Nama Orang Tua" required>
-                                    <input type="tel" id="nomorWhatsApp" class="form-control rounded-pill mb-3"
-                                        placeholder="Nomor WhatsApp" required>
-                                    <textarea id="pesan" class="form-control rounded-4 mb-3" rows="3"
-                                        placeholder="Pesan" required></textarea>
-                                    <button type="submit" class="btn btn-ra w-100">Kirim Pertanyaan</button>
-                                </form>
-                            </div>
-                        </div>
+            <div class="center" style="margin-bottom:46px;">
+                <span class="eyebrow reveal"><i class="fas fa-chalkboard-user"></i> Tim Pengajar</span>
+                <h2 class="section-title reveal d1">Guru-Guru Penuh Cinta</h2>
+            </div>
+            <div class="teachers">
+                <div class="teacher glass reveal d1">
+                    <div class="avatar" style="background:linear-gradient(135deg,#ff8a7d,#ff5a4d);">LS</div>
+                    <h6>Hj. Lilis Suryani, S.Ag. M.Pd.I</h6>
+                    <small>Guru PAI</small>
+                </div>
+                <div class="teacher glass reveal d2">
+                    <div class="avatar" style="background:linear-gradient(135deg,#2bb8a6,#0f9d8c);">PP</div>
+                    <h6>Pak Ponco</h6>
+                    <small>Pembimbing Pelukis</small>
+                </div>
+                <div class="teacher glass reveal d3">
+                    <div class="avatar" style="background:linear-gradient(135deg,#6fd9b8,#4cc9a8);">AS</div>
+                    <h6>Ibu Asuroh, S.Pd</h6>
+                    <small>Guru Kelas B</small>
+                </div>
+                <div class="teacher glass reveal d2">
+                    <div class="avatar" style="background:linear-gradient(135deg,#ffd06b,#ffc14d);">EE</div>
+                    <h6>Ibu Ela Etidjah, S.PAUDI</h6>
+                    <small>Guru Kelas A</small>
+                </div>
+                <div class="teacher glass reveal d1">
+                    <div class="avatar" style="background:linear-gradient(135deg,#ffb27d,#ff8a5a);">TM</div>
+                    <h6>Ibu Titi Mutiah, S.Pd.I</h6>
+                    <small>Guru Ekskul</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="center" style="margin-bottom:46px;">
+                <span class="eyebrow reveal"><i class="fas fa-circle-question"></i> FAQ</span>
+                <h2 class="section-title reveal d1">Pertanyaan yang Sering Diajukan</h2>
+            </div>
+            <div class="faq reveal">
+                <div class="faq-item glass">
+                    <button class="faq-q">Mulai usia berapa anak bisa mendaftar?
+                        <span class="q-ic"><i class="fas fa-plus"></i></span></button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Kami melayani dua kelompok belajar: Kelompok A (sekitar usia 4–5 tahun) dan Kelompok B
+                        (sekitar usia 5–6 tahun), disesuaikan dengan kesiapan ananda.
+                    </div></div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-q">Apa saja program unggulannya?
+                        <span class="q-ic"><i class="fas fa-plus"></i></span></button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Adab &amp; Tahfidz (hafalan Juz 30), Seni Kreatif, dan Alam Ceria. Kami memadukan kurikulum
+                        Nasional dengan penanaman nilai-nilai Islami dalam suasana yang menyenangkan.
+                    </div></div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-q">Kapan jam belajarnya?
+                        <span class="q-ic"><i class="fas fa-plus"></i></span></button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Kegiatan belajar berlangsung pada pagi hari di hari sekolah. Untuk jadwal lengkap dan
+                        hari masuk terbaru, silakan
+                        <a class="wa-link" href="https://wa.me/6281281163844" target="_blank">hubungi admin via WhatsApp</a>.
+                    </div></div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-q">Berapa biaya pendaftaran dan SPP?
+                        <span class="q-ic"><i class="fas fa-plus"></i></span></button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Rincian biaya menyesuaikan kelompok dan program yang dipilih. Untuk informasi biaya
+                        terbaru, silakan
+                        <a class="wa-link" href="https://wa.me/6281281163844" target="_blank">tanyakan langsung ke admin</a>.
+                    </div></div>
+                </div>
+                <div class="faq-item glass">
+                    <button class="faq-q">Bagaimana cara mendaftar?
+                        <span class="q-ic"><i class="fas fa-plus"></i></span></button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Mudah sekali — cukup
+                        <a class="wa-link" href="https://wa.me/6281281163844" target="_blank">chat admin kami via WhatsApp</a>
+                        atau isi formulir di bagian Kontak, lalu tim kami akan memandu langkah selanjutnya.
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="glass" style="padding:48px;">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <span class="eyebrow"><i class="fas fa-paper-plane"></i> Hubungi Kami</span>
+                        <h2 class="section-title">Ayo Daftar Sekarang!</h2>
+                        <p class="section-sub" style="margin-bottom:28px;">Punya pertanyaan? Tim kami siap membantu.</p>
+                        <p><span class="ic" style="background:#ff7eb3;"><i class="fas fa-map-marker-alt"></i></span>
+                            Jl. Cikunir Raya Gg. H. Tohir, RT.02/RW.02, Jakamulya, Bekasi Selatan, Jawa Barat 17146</p>
+                        <p><span class="ic" style="background:#3fb96b;"><i class="fas fa-phone"></i></span>
+                            +62 812-8116-3844</p>
+                        <p><span class="ic" style="background:#5ec5e8;"><i class="fas fa-envelope"></i></span>
+                            info@assuryaniyah.sch.id</p>
+                    </div>
+                    <div class="reveal d1">
+                        <form id="contactForm">
+                            <input type="text" id="NamaOrangTua" class="form-control" placeholder="Nama Orang Tua" required>
+                            <input type="tel" id="nomorWhatsApp" class="form-control" placeholder="Nomor WhatsApp" required>
+                            <textarea id="pesan" class="form-control" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                            <button type="submit" class="btn" style="width:100%;justify-content:center;">
+                                <i class="fab fa-whatsapp"></i> Kirim via WhatsApp</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="location" class="py-5">
-        <div class="container" data-aos="fade-up">
-            <div class="glass p-4 text-center">
-                <h3 class="fw-bold mb-4">Lokasi Kami</h3>
-
-                <div class="map-container rounded-4 shadow-sm overflow-hidden position-relative">
-                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1000"
-                        class="img-fluid w-100" style="height: 350px; object-fit: cover; filter: brightness(0.7);"
-                        alt="Lokasi RA Assuryaniyah">
-
-                    <div class="position-absolute top-50 start-50 translate-middle">
-                        <a href="https://maps.app.goo.gl/9R6hD6G8hG8hG8hG8" target="_blank"
-                            class="btn btn-ra px-4 shadow-lg">
-                            <i class="fas fa-map-marked-alt me-2"></i>Buka di Google Maps
-                        </a>
-                    </div>
-                </div>
-
-                <p class="mt-4 text-muted">
-                    <i class="fas fa-map-marker-alt text-danger me-2"></i>
-                    Jl. Cikunir Raya Gg. H. Tohir, RT.02/RW.02, Jakamulya, Bekasi Selatan.
-                </p>
+    <!-- ============ LOCATION ============ -->
+    <section id="location" class="section" style="padding-top:0;">
+        <div class="container">
+            <div class="center" style="margin-bottom:36px;">
+                <span class="eyebrow reveal"><i class="fas fa-location-dot"></i> Lokasi</span>
+                <h2 class="section-title reveal d1">Temukan Kami di Sini</h2>
+            </div>
+            <div class="map-card glass reveal" style="padding:8px;">
+                <iframe
+                    src="https://www.google.com/maps?q=Jakamulya,+Bekasi+Selatan&output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Lokasi RA Assuryaniyah Arafat"></iframe>
             </div>
         </div>
     </section>
-    <footer class="text-center py-4 bg-white bg-opacity-50 mt-5 border-top">
-        <p class="mb-0 text-muted">&copy; 2026 RA Assuryaniyah Arafat. Ceria Bersama Al-Qur'an.</p>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="container">
+            <div class="glass">
+                <p>&copy; 2026 RA Assuryaniyah Arafat &middot; Ceria Bersama Al-Qur'an
+                    <span class="heart"><i class="fas fa-heart"></i></span></p>
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/6281281163844" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- Lightbox -->
+    <div class="lightbox" aria-hidden="true">
+        <button class="lb-close" aria-label="Tutup"><i class="fas fa-xmark"></i></button>
+        <img src="" alt="Pratinjau galeri">
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281281163844" class="float-wa" target="_blank" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script src="assets/js/main.js"></script>
 </body>
 
