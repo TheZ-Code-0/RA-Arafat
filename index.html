@@ -1,349 +1,399 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RA Assuryaniyah Arafat - Satu Atap Kebahagiaan</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        /* Smooth Scroll agar perpindahan section halus */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section {
-            padding: 80px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RA Assuryaniyah Arafat – Satu Atap Kebahagiaan 🌟</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body id="home">
+<!-- ☁️ FLOATING CLOUDS -->
+<div class="cloud-layer">
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+</div>
 
-    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home" style="color: #ff6f91;">
-                <img src="assets/img/logo-ra.png" alt="Logo" height="45" class="d-inline-block align-text-top me-2">
-                RA Assuryaniyah
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#teacher">Guru</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="https://wa.me/6281281163844" class="btn btn-ra btn-sm">Daftar Sekarang</a>
-                    </li>
-                </ul>
-            </div>
+<!-- ── NAVBAR ── -->
+<nav class="navbar-3d">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+    <a class="navbar-brand-3d" href="#home">
+      <img src="assets/img/logo-ra.png" alt="Logo RA" height="44" style="filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.15));">
+      RA Assuryaniyah
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+      <div class="d-flex flex-wrap align-items-center gap-1 mt-2 mt-lg-0">
+        <a class="nav-link-3d" href="#home">🏠 Home</a>
+        <a class="nav-link-3d" href="#about">💚 Tentang</a>
+        <a class="nav-link-3d" href="#program">⭐ Program</a>
+        <a class="nav-link-3d" href="#gallery">📸 Galeri</a>
+        <a class="nav-link-3d" href="#teacher">👩‍🏫 Guru</a>
+        <a class="nav-link-3d" href="#contact">📞 Kontak</a>
+        <a href="https://wa.me/6281281163844" class="btn-daftar ms-2">🎉 Daftar Sekarang!</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="home" class="hero-section">
+  <!-- Decorative bouncing elements -->
+  <span class="bounce-elem" style="top:18%; left:5%; animation-delay:.5s">🌈</span>
+  <span class="bounce-elem" style="top:25%; right:8%; animation-delay:1s">⭐</span>
+  <span class="bounce-elem" style="top:60%; left:3%; animation-delay:1.5s">🎈</span>
+  <span class="bounce-elem" style="top:45%; right:4%; animation-delay:2s">🦋</span>
+  <span class="bounce-elem" style="bottom:25%; left:10%; animation-delay:.8s">🌸</span>
+
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <div class="hero-card-3d">
+          <span class="badge-3d">🏆 Sekolah Ramah Anak &amp; Islami</span>
+          <h1 class="hero-title mb-3">
+            Selamat Datang di
+            <span class="highlight">RA Assuryaniyah Arafat</span>
+          </h1>
+          <p class="hero-subtitle mb-4">
+            Mendidik dengan Cinta 💝, Bermain dengan Bahagia 😊.<br>
+            Membangun fondasi karakter Islami sejak usia dini!
+          </p>
+          <div class="d-flex flex-wrap gap-3 align-items-center">
+            <a href="#about" class="btn-hero">Pelajari Lebih ↓</a>
+            <a href="https://wa.me/6281281163844" class="btn-daftar">🎉 Daftar Sekarang!</a>
+          </div>
         </div>
-    </nav>
-
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                    <div class="glass p-4 p-md-5">
-                        <span class="badge bg-white text-primary mb-3 rounded-pill px-3 py-2 shadow-sm">
-                            <i class="fas fa-heart text-danger me-1"></i> Sekolah Ramah Anak
-                        </span>
-                        <h1 class="display-4 fw-bold mb-3">
-                            Selamat Datang di <br>
-                            <span style="color: #ff6f91;">RA Assuryaniyah Arafat</span>
-                        </h1>
-                        <p class="lead mb-4 text-secondary">
-                            Mendidik dengan Cinta, Bermain dengan Bahagia. Membangun fondasi karakter Islami sejak usia
-                            dini.
-                        </p>
-                        <a href="#about" class="btn btn-ra">Pelajari Lebih Lanjut</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center" data-aos="zoom-in">
-                    <img src="assets/img/hero-ra.png" alt="Hero RA" class="img-fluid" style="max-height: 480px;">
-                </div>
-                <div class="blob-container d-none d-lg-block">
-                    <div class="blob shape-1"></div>
-                    <div class="blob shape-2"></div>
-                </div>
-            </div>
+      </div>
+      <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+        <div class="hero-img-wrap">
+          <img src="assets/img/hero-ra.png" alt="Anak-anak RA Assuryaniyah Arafat" style="max-height: 460px; max-width: 100%;">
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="about">
-        <div class="container">
-            <div class="glass p-5" data-aos="fade-up">
-                <div class="row align-items-center">
-                    <div class="col-md-5 mb-4 mb-md-0">
-                        <img src="assets/img/sekolah.png" class="img-fluid rounded-4 shadow" alt="Sekolah Kami">
-                    </div>
-                    <div class="col-md-7">
-                        <h2 class="fw-bold mb-3" style="color: #87ceeb;">Tentang Kami</h2>
-                        <p>RA Assuryaniyah Arafat hadir sebagai partner orang tua dalam membimbing ananda di masa
-                            *Golden Age*. Kami mengutamakan pembentukan akhlak tanpa menghilangkan keceriaan dunia anak.
-                        </p>
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <h6 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Visi</h6>
-                                <p class="small">Mewujudkan generasi Rabbani yang mandiri dan kreatif.</p>
-                            </div>
-                            <div class="col-6">
-                                <h6 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Kurikulum</h6>
-                                <p class="small">Kombinasi kurikulum Nasional & nilai Islami.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- STATS BUBBLES -->
+    <div class="stats-row mt-5" data-aos="fade-up" data-aos-delay="400">
+      <div class="stat-bubble">
+        <span class="stat-num">10+</span>
+        <span class="stat-lbl">Tahun Berdiri</span>
+      </div>
+      <div class="stat-bubble">
+        <span class="stat-num">200+</span>
+        <span class="stat-lbl">Alumni Bahagia</span>
+      </div>
+      <div class="stat-bubble">
+        <span class="stat-num">5</span>
+        <span class="stat-lbl">Guru Berdedikasi</span>
+      </div>
+      <div class="stat-bubble">
+        <span class="stat-num">100%</span>
+        <span class="stat-lbl">Islami &amp; Fun</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-grass"></div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="about-section">
+  <span class="deco-star" style="top:10%; left:5%">⭐</span>
+  <span class="deco-star" style="top:20%; right:8%; animation-delay:3s">🌟</span>
+  <span class="deco-star" style="bottom:15%; left:12%; animation-delay:5s">✨</span>
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Tentang Kami 💚<span class="underline-wiggly"></span></h2>
+      <p class="mt-3 text-muted fs-5">Partner terbaik orang tua di masa Golden Age si kecil</p>
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <img src="assets/img/sekolah.png" class="about-img-3d" alt="Gedung RA Assuryaniyah Arafat">
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="about-card">
+          <p class="fs-5 mb-4" style="color:#444; line-height:1.8;">
+            RA Assuryaniyah Arafat hadir sebagai partner orang tua dalam membimbing ananda di masa <strong>Golden Age</strong>. Kami mengutamakan pembentukan akhlak mulia tanpa menghilangkan keceriaan dunia anak! 🌈
+          </p>
+          <div class="visi-misi-item">
+            <h6>🎯 Visi</h6>
+            <p>Mewujudkan generasi Rabbani yang mandiri, cerdas, dan berkarakter Islami.</p>
+          </div>
+          <div class="visi-misi-item">
+            <h6>📚 Kurikulum</h6>
+            <p>Kombinasi kurikulum Nasional &amp; nilai Islami yang menyenangkan dan aktif.</p>
+          </div>
+          <div class="visi-misi-item">
+            <h6>❤️ Pendekatan</h6>
+            <p>Belajar sambil bermain dengan suasana ceria, aman, dan penuh kasih sayang.</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="program" style="background: rgba(255,255,255,0.2);">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Program Unggulan</h2>
-                <p class="text-muted">Aktivitas seru untuk kembangkan potensi ananda</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
-                    <div class="glass feature-card">
-                        <div class="icon-box" style="background: #fff9c4; color: #fbc02d;"><i
-                                class="fas fa-star-and-crescent"></i></div>
-                        <h4>Adab & Tahfidz</h4>
-                        <p>Pembiasaan adab harian dan hafalan surat pendek Juz 30.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                    <div class="glass feature-card">
-                        <div class="icon-box" style="background: #e1f5fe; color: #03a9f4;"><i
-                                class="fas fa-palette"></i></div>
-                        <h4>Seni Kreatif</h4>
-                        <p>Eksplorasi warna dan kerajinan untuk melatih motorik halus.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
-                    <div class="glass feature-card">
-                        <div class="icon-box" style="background: #f1f8e9; color: #7cb342;"><i
-                                class="fas fa-seedling"></i></div>
-                        <h4>Alam Ceria</h4>
-                        <p>Mengenal ciptaan Allah melalui kegiatan berkebun dan outbound.</p>
-                    </div>
-                </div>
-            </div>
+<!-- ── PROGRAM ── -->
+<section id="program" class="program-section">
+  <span class="deco-star" style="top:5%; right:10%; animation-delay:2s">🌟</span>
+  <span class="deco-star" style="bottom:10%; left:6%; animation-delay:4s">⭐</span>
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Program Unggulan ⭐<span class="underline-wiggly"></span></h2>
+      <p class="mt-3 text-muted fs-5">Aktivitas seru untuk kembangkan potensi terbaik ananda!</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+        <div class="program-card-3d card-kuning">
+          <div class="card-ribbon">Unggulan!</div>
+          <div class="program-icon-3d icon-kuning">🌙</div>
+          <h4>Adab &amp; Tahfidz</h4>
+          <p>Pembiasaan adab harian dan hafalan surat pendek Juz 30 dengan metode menyenangkan.</p>
         </div>
-    </section>
-
-    <section id="gallery" class="py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Galeri Kegiatan</h2>
-
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan.jpeg" class="img-fluid rounded-3" alt="Kegiatan 1">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-1.jpeg" class="img-fluid rounded-3" alt="Kegiatan 2">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-2.jpeg" class="img-fluid rounded-3" alt="Kegiatan 3">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-3.jpeg" class="img-fluid rounded-3" alt="Kegiatan 4">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-4.jpeg" class="img-fluid rounded-3" alt="Kegiatan 5">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-5.jpeg" class="img-fluid rounded-3" alt="Kegiatan 6">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-6.jpeg" class="img-fluid rounded-3" alt="Kegiatan 7">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-7.jpeg" class="img-fluid rounded-3" alt="Kegiatan 8">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-8.jpeg" class="img-fluid rounded-3" alt="Kegiatan 9">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-9.jpeg" class="img-fluid rounded-3" alt="Kegiatan 10">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-10.jpeg" class="img-fluid rounded-3" alt="Kegiatan 11">
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
-                    <div class="gallery-img p-2 glass">
-                        <img src="assets/img/kegiatan-11.jpeg" class="img-fluid rounded-3" alt="Kegiatan 12">
-                    </div>
-                </div>
-
-            </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+        <div class="program-card-3d card-biru">
+          <div class="program-icon-3d icon-biru">🎨</div>
+          <h4>Seni Kreatif</h4>
+          <p>Eksplorasi warna dan kerajinan tangan untuk melatih motorik halus dan ekspresi anak.</p>
         </div>
-    </section>
-
-    <section id="teacher" style="background: rgba(255,182,193,0.1); padding: 60px 0;">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Tim Pengajar</h2>
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Lilis+Suryani&background=ffb6c1"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Hj. Lilis Suryani, S.Ag. M.Pd.I</h6>
-                        <small class="text-muted d-block">Guru PAI</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Pak+Ponco&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Pak Ponco</h6>
-                        <small class="text-muted d-block">Pembimbing Pelukis</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Asuroh&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Ibu Asuroh, S.Pd</h6>
-                        <small class="text-muted d-block">Guru Kelas B</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Ela+Etidjah&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Ibu Ela Etidjah, S.PAUDI</h6>
-                        <small class="text-muted d-block">Guru Kelas A</small>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="glass p-3 h-100">
-                        <img src="https://ui-avatars.com/api/?name=Titi+Mutiah&background=87ceeb"
-                            class="rounded-circle mb-3 w-75 shadow" alt="Guru">
-                        <h6 class="fw-bold mb-1">Ibu Titi Mutiah, S.Pd.I</h6>
-                        <small class="text-muted d-block">Guru Kelas Ekskul</small>
-                    </div>
-                </div>
-
-            </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+        <div class="program-card-3d card-hijau">
+          <div class="program-icon-3d icon-hijau">🌱</div>
+          <h4>Alam Ceria</h4>
+          <p>Mengenal ciptaan Allah melalui kegiatan berkebun dan outbound yang menyenangkan.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="glass p-5">
-                        <div class="row">
-                            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-                                <h2 class="fw-bold mb-4">Ayo Daftar Sekarang!</h2>
-                                <p><i class="fas fa-map-marker-alt text-danger me-2"></i> JL Cikunir Raya Gg. H. Tohir,
-                                    RT. 02 RW. 02, Jakamulya, Bekasi Selatan, RT.002/RW.002, Jakamulya, Bekasi, Kota
-                                    Bks, Jawa Barat 17146
-                                </p>
-                                <p><i class="fas fa-phone text-success me-2"></i> +62 812-8116-3844</p>
-                                <p><i class="fas fa-envelope text-primary me-2"></i> info@assuryaniyah.sch.id</p>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-left">
-                                <form id="contactForm"> <input type="text" id="NamaOrangTua"
-                                        class="form-control rounded-pill mb-3" placeholder="Nama Orang Tua" required>
-                                    <input type="tel" id="nomorWhatsApp" class="form-control rounded-pill mb-3"
-                                        placeholder="Nomor WhatsApp" required>
-                                    <textarea id="pesan" class="form-control rounded-4 mb-3" rows="3"
-                                        placeholder="Pesan" required></textarea>
-                                    <button type="submit" class="btn btn-ra w-100">Kirim Pertanyaan</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- ── GALLERY ── -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Galeri Kegiatan 📸<span class="underline-wiggly"></span></h2>
+      <p class="mt-3 text-muted fs-5">Momen-momen ceria si kecil bersama teman-teman!</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan.jpeg" alt="Kegiatan 1">
+          <div class="gallery-overlay"><span>🎉 Kegiatan Ceria</span></div>
         </div>
-    </section>
-
-    <section id="location" class="py-5">
-        <div class="container" data-aos="fade-up">
-            <div class="glass p-4 text-center">
-                <h3 class="fw-bold mb-4">Lokasi Kami</h3>
-
-                <div class="map-container rounded-4 shadow-sm overflow-hidden position-relative">
-                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1000"
-                        class="img-fluid w-100" style="height: 350px; object-fit: cover; filter: brightness(0.7);"
-                        alt="Lokasi RA Assuryaniyah">
-
-                    <div class="position-absolute top-50 start-50 translate-middle">
-                        <a href="https://maps.app.goo.gl/9R6hD6G8hG8hG8hG8" target="_blank"
-                            class="btn btn-ra px-4 shadow-lg">
-                            <i class="fas fa-map-marked-alt me-2"></i>Buka di Google Maps
-                        </a>
-                    </div>
-                </div>
-
-                <p class="mt-4 text-muted">
-                    <i class="fas fa-map-marker-alt text-danger me-2"></i>
-                    Jl. Cikunir Raya Gg. H. Tohir, RT.02/RW.02, Jakamulya, Bekasi Selatan.
-                </p>
-            </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-1.jpeg" alt="Kegiatan 2">
+          <div class="gallery-overlay"><span>🌈 Belajar Bareng</span></div>
         </div>
-    </section>
-    <footer class="text-center py-4 bg-white bg-opacity-50 mt-5 border-top">
-        <p class="mb-0 text-muted">&copy; 2026 RA Assuryaniyah Arafat. Ceria Bersama Al-Qur'an.</p>
-    </footer>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-2.jpeg" alt="Kegiatan 3">
+          <div class="gallery-overlay"><span>🎨 Seni Kreatif</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-3.jpeg" alt="Kegiatan 4">
+          <div class="gallery-overlay"><span>⭐ Prestasi Anak</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-4.jpeg" alt="Kegiatan 5">
+          <div class="gallery-overlay"><span>🌸 Bermain Bersama</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-5.jpeg" alt="Kegiatan 6">
+          <div class="gallery-overlay"><span>🎓 Wisuda Bahagia</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-6.jpeg" alt="Kegiatan 7">
+          <div class="gallery-overlay"><span>🏃 Outbound Seru</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-7.jpeg" alt="Kegiatan 8">
+          <div class="gallery-overlay"><span>📚 Belajar Qur'an</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="450">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-8.jpeg" alt="Kegiatan 9">
+          <div class="gallery-overlay"><span>🎭 Pentas Seni</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-9.jpeg" alt="Kegiatan 10">
+          <div class="gallery-overlay"><span>🌱 Berkebun Yuk!</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="550">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-10.jpeg" alt="Kegiatan 11">
+          <div class="gallery-overlay"><span>💃 Menari Ceria</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="600">
+        <div class="gallery-item-3d">
+          <img src="assets/img/kegiatan-11.jpeg" alt="Kegiatan 12">
+          <div class="gallery-overlay"><span>🏆 Juara Kita!</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <a href="https://wa.me/6281281163844" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<!-- ── TEACHERS ── -->
+<section id="teacher" class="teacher-section">
+  <span class="deco-star" style="top:8%; left:3%">💫</span>
+  <span class="deco-star" style="bottom:8%; right:5%; animation-delay:3.5s">⭐</span>
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Tim Pengajar 👩‍🏫<span class="underline-wiggly"></span></h2>
+      <p class="mt-3 text-muted fs-5">Guru-guru terbaik yang mencintai anak-anak dengan sepenuh hati</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="teacher-card-3d">
+          <img src="https://ui-avatars.com/api/?name=Lilis+Suryani&background=FF6EB4&color=fff&size=150" class="teacher-avatar" alt="Hj. Lilis Suryani">
+          <p class="teacher-name">Hj. Lilis Suryani, S.Ag. M.Pd.I</p>
+          <span class="teacher-role">Guru PAI ❤️</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="teacher-card-3d">
+          <img src="https://ui-avatars.com/api/?name=Pak+Ponco&background=1E90FF&color=fff&size=150" class="teacher-avatar" alt="Pak Ponco">
+          <p class="teacher-name">Pak Ponco</p>
+          <span class="teacher-role">Guru Melukis 🎨</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="teacher-card-3d">
+          <img src="https://ui-avatars.com/api/?name=Asuroh&background=A855F7&color=fff&size=150" class="teacher-avatar" alt="Ibu Asuroh">
+          <p class="teacher-name">Ibu Asuroh, S.Pd</p>
+          <span class="teacher-role">Guru Kelas B 🌟</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+        <div class="teacher-card-3d">
+          <img src="https://ui-avatars.com/api/?name=Ela+Etidjah&background=2ED573&color=fff&size=150" class="teacher-avatar" alt="Ibu Ela Etidjah">
+          <p class="teacher-name">Ibu Ela Etidjah, S.PAUDI</p>
+          <span class="teacher-role">Guru Kelas A 🌱</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+        <div class="teacher-card-3d">
+          <img src="https://ui-avatars.com/api/?name=Titi+Mutiah&background=FF6B35&color=fff&size=150" class="teacher-avatar" alt="Ibu Titi Mutiah">
+          <p class="teacher-name">Ibu Titi Mutiah, S.Pd.I</p>
+          <span class="teacher-role">Guru Ekskul 🎭</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/main.js"></script>
+<!-- ── CONTACT ── -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Ayo Bergabung! 🎉<span class="underline-wiggly"></span></h2>
+      <p class="mt-3 text-muted fs-5">Daftarkan si kecil sekarang dan rasakan perbedaannya!</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="contact-card-3d" data-aos="zoom-in">
+          <div class="row g-4">
+            <div class="col-md-5">
+              <h3 style="font-family:'Fredoka One',cursive; color:var(--purple); margin-bottom:24px; font-size:1.6rem;">📍 Informasi Kami</h3>
+              <div class="contact-info-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <strong>Alamat</strong>
+                  <span>JL Cikunir Raya Gg. H. Tohir, RT.02/RW.02, Jakamulya, Bekasi Selatan, Jawa Barat 17146</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-icon">📱</span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+62 812-8116-3844</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <span>info@assuryaniyah.sch.id</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h3 style="font-family:'Fredoka One',cursive; color:var(--purple); margin-bottom:24px; font-size:1.6rem;">💬 Kirim Pesan</h3>
+              <form id="contactForm" class="form-3d">
+                <input type="text" id="NamaOrangTua" class="form-control mb-3" placeholder="👨‍👩‍👧 Nama Orang Tua" required>
+                <input type="tel" id="nomorWhatsApp" class="form-control mb-3" placeholder="📱 Nomor WhatsApp" required>
+                <textarea id="pesan" class="form-control mb-4" rows="4" placeholder="✍️ Pesan atau pertanyaan Anda..." required></textarea>
+                <button type="submit" class="btn-submit-3d">🚀 Kirim via WhatsApp!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOCATION ── -->
+<section id="location" class="location-section">
+  <div class="container" data-aos="fade-up">
+    <div class="location-card-3d">
+      <div class="location-header">
+        <span class="location-pin">📍</span>
+        <h3>Lokasi Kami</h3>
+      </div>
+      <div class="location-map-wrap">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1200" alt="Lokasi RA Assuryaniyah Arafat" loading="lazy">
+        <div class="location-map-overlay">
+          <a href="https://maps.app.goo.gl/9R6hD6G8hG8hG8hG8" target="_blank" class="btn-maps-3d">
+            <span>🗺️</span> Buka di Google Maps
+          </a>
+        </div>
+      </div>
+      <div style="padding:20px 28px; background:#f0f8ff; text-align:center;">
+        <p style="margin:0; color:#555; font-size:0.95rem;">
+          <strong>📍 Jl. Cikunir Raya Gg. H. Tohir, RT.02/RW.02, Jakamulya, Bekasi Selatan, Jawa Barat 17146</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2026 <span>RA Assuryaniyah Arafat</span> — Ceria Bersama Al-Qur'an 🌙</p>
+</footer>
+
+<!-- ── FLOATING WA ── -->
+<a href="https://wa.me/6281281163844" class="float-wa-3d" target="_blank" title="Chat WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
